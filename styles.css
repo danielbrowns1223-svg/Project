@@ -1,0 +1,290 @@
+:root {
+    --maroon: #500000;
+    --maroon-dark: #310000;
+    --cream: #f7f3ee;
+    --ink: #1f2933;
+    --muted: #5f6b76;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    padding-top: 72px;
+}
+
+.navbar {
+    background: rgba(49, 0, 0, 0.97);
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand,
+.nav-link {
+    letter-spacing: 0.03em;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.hero-section {
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.14), transparent 35%),
+        linear-gradient(135deg, var(--maroon), var(--maroon-dark));
+    padding: 7rem 0 6rem;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.88);
+    background: #f7f3ee;
+    object-fit: cover;
+}
+
+.section-padding {
+    padding: 6rem 0;
+}
+
+.section-kicker {
+    color: var(--maroon);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.section-title {
+    font-weight: 800;
+    margin-bottom: 1.4rem;
+}
+
+.info-panel {
+    background: var(--cream);
+    border-left: 5px solid var(--maroon);
+    border-radius: 0.8rem;
+    padding: 2rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.skill-list span {
+    background: var(--cream);
+    border: 1px solid #ded5ca;
+    border-radius: 999px;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.info-panel .skill-list span {
+    background: var(--white);
+}
+
+.experience-card {
+    background: var(--white);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(22, 29, 37, 0.09);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(22, 29, 37, 0.14);
+}
+
+.experience-card .card-body {
+    padding: 1.8rem;
+}
+
+.experience-card h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-top: 0.75rem;
+}
+
+.card-label {
+    display: inline-block;
+    color: var(--maroon);
+    background: #f3e7e7;
+    border-radius: 999px;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.role {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.resume-grid {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.resume-section {
+    border-bottom: 1px solid #e4e7ea;
+    padding: 0 0 2.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.resume-section h3 {
+    color: var(--maroon);
+    font-weight: 800;
+    margin-bottom: 1.7rem;
+}
+
+.resume-entry {
+    margin-bottom: 2rem;
+}
+
+.resume-entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.entry-heading h4 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+.entry-heading span {
+    color: var(--muted);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.entry-subtitle {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.resume-entry li {
+    margin-bottom: 0.35rem;
+}
+
+.contact-section {
+    background: linear-gradient(135deg, var(--maroon-dark), var(--maroon));
+}
+
+.contact-copy {
+    max-width: 760px;
+}
+
+.scratch-link {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.site-footer {
+    background: #1e2328;
+    color: #dbe1e7;
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 64px;
+    }
+
+    .hero-section {
+        padding: 5rem 0 4rem;
+    }
+
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .entry-heading {
+        display: block;
+    }
+
+    .entry-heading span {
+        display: block;
+        margin-bottom: 0.35rem;
+    }
+}
+.hero-actions .btn {
+    min-width: 165px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-actions .btn {
+    min-width: 145px;
+}
+
+.contact-email {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.resume-entry,
+.experience-card,
+.info-panel {
+    animation: fadeUp 0.55s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<rect width="1000" height="620" rx="40" fill="#f8f2e7"/>
+<rect x="260" y="250" width="480" height="260" rx="28" fill="#26384a"/>
+<rect x="330" y="210" width="340" height="60" rx="16" fill="#172534"/>
+<rect x="350" y="55" width="300" height="250" rx="22" fill="#ffffff" stroke="#704214" stroke-width="10" transform="rotate(-8 500 180)"/>
+<path d="M414 162l45 45 100-112" fill="none" stroke="#500000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#ffffff">BALLOT BOX</text>
+<circle cx="155" cy="480" r="70" fill="#b58b5c"/>
+<circle cx="845" cy="125" r="70" fill="#b58b5c"/>
+</svg>
